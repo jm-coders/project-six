@@ -1,0 +1,661 @@
+/*====================== If you can change any code for this with help vs code  beautify extention or use Unminifier/Uncompressor  website (use this link   https://unminify.com) =============================*/
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.625em;
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: rgba(157, 247, 53, 0.767);
+}
+
+a {
+    text-decoration: none;
+    color: #000
+}
+
+img {
+    width: 100%;
+    height: auto
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+h2 {
+    font-size: 40px;
+    margin: 0 0 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    text-align: center
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    background: #000;
+    height: 4px;
+    width: 85px;
+    top: 75px;
+    left: 50%;
+    -webkit-transform: translatex(-50%);
+    transform: translatex(-50%)
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase
+}
+
+section {
+    padding: 80px 0
+}
+
+section::after {
+    clear: both;
+    display: table
+}
+
+.container {
+    max-width: 1140px;
+    width: 96%;
+    margin: 0 auto
+}
+
+.btn {
+    background: #d2691e;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: none;
+    border-bottom: 3px solid;
+    border-color: coral;
+    padding: 13px 60px;
+    display: inline-block;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 45px;
+    cursor: pointer
+}
+
+.littel_description {
+    width: 60%;
+    margin: auto;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center
+}
+
+.four_flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 60px
+}
+
+.four_flex .box {
+    width: 23.8%;
+    padding: 1%
+}
+
+.flex_two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.flex_two .box {
+    width: 49%;
+    padding: 1%
+}
+
+.role {
+    color: #30bae7;
+    text-transform: capitalize
+}
+
+header {
+    height: 85vh;
+    min-height: 500px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(135, 80, 156, .9)), to(rgba(135, 80, 156, .9))), url(../img/hero-bg.jpg) fixed center no-repeat;
+    background: linear-gradient(rgba(135, 80, 156, .9), rgba(135, 80, 156, .9)), url(../img/hero-bg.jpg) fixed center no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%
+}
+
+.logo {
+    width: 22%;
+    float: left;
+    margin-top: 35px
+}
+
+.logo img {
+    cursor: pointer;
+    width: auto
+}
+
+.min_manu {
+    float: right;
+    width: 78%
+}
+
+.min_manu ul {
+    margin-top: 40px;
+    text-align: right
+}
+
+.min_manu ul li {
+    display: inline-block;
+    margin-left: 5px
+}
+
+.min_manu ul li .active {
+    background: #643a79
+}
+
+.min_manu ul li a {
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 3px;
+    display: block;
+    -webkit-transition: all 00.5s;
+    transition: all 00.5s;
+    text-transform: uppercase
+}
+
+.min_manu ul li a:hover {
+    background: #643a79
+}
+
+.sticky {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(135, 80, 156, .9);
+    z-index: 5;
+    -webkit-box-shadow: 0 3px 3px rgb(255, 255, 255, .8);
+    box-shadow: 0 3px 3px rgb(255, 255, 255, .8)
+}
+
+.sticky .logo {
+    margin-top: 3px
+}
+
+.sticky .mobile_menu span {
+    margin-top: 12px
+}
+
+.sticky .overly .close_btn {
+    margin-top: 12px;
+    margin-right: 12px
+}
+
+.sticky .min_manu ul {
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
+.hero_text_box {
+    clear: both;
+    max-width: 1000px;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff
+}
+
+.hero_text_box h1 {
+    font-size: 42px;
+    line-height: normal
+}
+
+.btn_hero {
+    background: #eb7d4b;
+    border-color: #c86a40
+}
+
+.mobile_menu span {
+    color: #fff;
+    font-size: 40px;
+    float: right;
+    margin-top: 40px;
+    display: none
+}
+
+.close_btn {
+    color: #fff;
+    font-size: 60px
+}
+
+.overly {
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, .9);
+    color: #fff;
+    position: fixed;
+    -webkit-transition: all 00.5s;
+    transition: all 00.5s;
+    z-index: 6;
+    text-align: center
+}
+
+.overly .close_btn {
+    float: right;
+    margin-top: 39px;
+    margin-right: 18px
+}
+
+.overely_menu {
+    position: relative;
+    top: 10%;
+    width: 100%
+}
+
+.overely_menu a {
+    display: block;
+    color: #999;
+    text-decoration: none;
+    clear: both;
+    padding: 10px 0;
+    font-size: 35px;
+    margin-top: 10px
+}
+
+.overely_menu a:hover {
+    background: #ccc
+}
+
+#service_area {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 194, 164, .9)), to(rgba(23, 194, 164, .9))), url(../img/services-bg.jpg) no-repeat center;
+    background: linear-gradient(rgba(23, 194, 164, .9), rgba(23, 194, 164, .9)), url(../img/services-bg.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: #fff
+}
+
+#service_area h2::after {
+    background: #14a58c
+}
+
+#service_area .four_flex .box img {
+    width: auto;
+    height: 120px
+}
+
+#tem_area {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(231, 241, 248, .8)), to(rgba(231, 241, 248, .8))), url(../img/team-bg.jpg) fixed bottom center no-repeat;
+    background: linear-gradient(rgba(231, 241, 248, .8), rgba(231, 241, 248, .8)), url(../img/team-bg.jpg) fixed bottom center no-repeat;
+    background-size: cover;
+    text-align: center
+}
+
+#tem_area h2 {
+    color: #3c4761
+}
+
+#tem_area h2::after {
+    background: #c8d9e5
+}
+
+#tem_area .box img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%
+}
+
+#tem_area .box h3 {
+    margin-bottom: 5px
+}
+
+#tem_area .box p {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    line-height: 1.3em
+}
+
+#tem_area .box .social_media {
+    margin-top: 45px
+}
+
+#tem_area .box .social_media li {
+    display: inline-block;
+    margin: 0 5px
+}
+
+#tem_area .box .social_media li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #bdd1df;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff
+}
+
+#tem_area .box .social_media li a i {
+    margin-top: 10px;
+    -webkit-transition: all 00.5s;
+    transition: all 00.5s
+}
+
+#tem_area .box .social_media li a:hover i {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    background: #393939
+}
+
+#tem_area .box .social_media li a:hover {
+    background: #393939
+}
+
+#skill_area {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255, .8)), to(rgb(255, 255, 255, .8))), url(../img/skill-bg.jpg) no-repeat;
+    background: linear-gradient(rgb(255, 255, 255, .8), rgb(255, 255, 255, .8)), url(../img/skill-bg.jpg) no-repeat;
+    background-size: cover;
+    color: #3c4761;
+    text-align: center
+}
+
+#skill_area h2::after {
+    background: #dfe8ed
+}
+
+svg.radial-progress {
+    height: auto;
+    max-width: 200px;
+    padding: 1em;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 100%
+}
+
+svg.radial-progress circle {
+    fill: transparent;
+    stroke: #000;
+    stroke-dashoffset: 219.91148575129;
+    stroke-width: 10
+}
+
+svg.radial-progress circle.incomplete {
+    opacity: .25
+}
+
+svg.radial-progress circle.complete {
+    stroke-dasharray: 219.91148575129
+}
+
+svg.radial-progress text {
+    fill: #000;
+    text-anchor: middle
+}
+
+#skill_area svg.radial-progress circle {
+    stroke-width: 5
+}
+
+#skill_area svg.web_design circle {
+    stroke: #30bae7
+}
+
+#skill_area svg.html_css circle {
+    stroke: #d74680
+}
+
+#skill_area svg.graphic_design circle {
+    stroke: #15c7a8
+}
+
+#skill_area svg.ui_ux circle {
+    stroke: #eb7d4b
+}
+
+#portfulio_area {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 221, 153, .9)), to(rgba(255, 221, 153, .9))), url(../img/portfolio-bg.jpg) fixed center no-repeat;
+    background: linear-gradient(rgba(255, 221, 153, .9), rgba(255, 221, 153, .9)), url(../img/portfolio-bg.jpg) fixed center no-repeat;
+    background-size: cover;
+    text-align: center
+}
+
+#portfulio_area h2 {
+    color: #3c4761
+}
+
+#portfulio_area h2::after {
+    background: #e5c37f
+}
+
+#portfulio_area .portfulio_filter {
+    margin: 45px 0;
+    overflow: hidden
+}
+
+#portfulio_area .portfulio_filter button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 0;
+    margin: 5px;
+    text-transform: uppercase;
+    color: #3c4761;
+    border-radius: 5px;
+    background: #ebc985;
+    cursor: pointer;
+    -webkit-transition: all 00.5s;
+    transition: all 00.5s
+}
+
+#portfulio_area .portfulio_filter button:hover {
+    -webkit-box-shadow: inset 0 3px 5px rgb(60, 71, 97, .5);
+    box-shadow: inset 0 3px 5px rgb(60, 71, 97, .5)
+}
+
+#portfulio_area .box h4 {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase
+}
+
+#portfulio_area .mixitup-control-active {
+    background: #fff !important
+}
+
+#testimonial_area {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(215, 70, 128, .9)), to(rgba(215, 70, 128, .9))), url(../img/testimonial-bg.jpg) no-repeat center;
+    background: linear-gradient(rgba(215, 70, 128, .9), rgba(215, 70, 128, .9)), url(../img/testimonial-bg.jpg) no-repeat center;
+    background-size: cover;
+    color: #fff
+}
+
+#testimonial_area h2::after {
+    background: #fff
+}
+
+#testimonial_area .box:nth-child(1),
+#testimonial_area .box:nth-child(2) {
+    margin-top: 40px
+}
+
+#testimonial_area .box:nth-child(3),
+#testimonial_area .box:nth-child(4) {
+    margin-top: 80px
+}
+
+#testimonial_area .box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%
+}
+
+#testimonial_area .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+#testimonial_area .box .client_photo {
+    width: 20%;
+    margin-right: 10px
+}
+
+#testimonial_area .box .client_review {
+    width: 70%
+}
+
+#testimonial_area .box .client_review p {
+    font-size: 21px;
+    font-style: italic;
+    margin-top: 0
+}
+
+#testimonial_area .box .client_review h3 {
+    margin-bottom: 0;
+    margin-top: 20px
+}
+
+#testimonial_area .box .client_review .post {
+    color: #fd9;
+    margin-top: 5px;
+    display: inline-block
+}
+
+#contucts_area {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(60, 84, 153, .9)), to(rgb(60, 84, 153, .9))), url(../img/contact-bg.jpg) fixed top;
+    background: linear-gradient(rgb(60, 84, 153, .9), rgb(60, 84, 153, .9)), url(../img/contact-bg.jpg) fixed top;
+    color: #fff;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden
+}
+
+#contucts_area h2::after {
+    background: #273a71
+}
+
+#contucts_area form {
+    width: 70%;
+    margin: auto;
+    margin-top: 40px
+}
+
+#contucts_area input[type=email],
+#contucts_area input[type=text],
+#contucts_area textarea {
+    background: #273a71;
+    padding: 15px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+    margin: 10px auto;
+    outline: 0;
+    color: #fff
+}
+
+#contucts_area form ::-webkit-input-placeholder {
+    color: #fff
+}
+
+#contucts_area form :-ms-input-placeholder {
+    color: #fff
+}
+
+#contucts_area form ::placeholder {
+    color: #fff
+}
+
+#contucts_area textarea {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    max-height: 200px;
+    resize: vertical
+}
+
+#contucts_area .send_btn {
+    background: #30bae7;
+    border-color: #299ec5
+}
+
+#footer_area {
+    background: #344b8e;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    color: #fff
+}
+
+#footer_area ul li {
+    display: inline-block
+}
+
+#footer_area ul li a {
+    margin: 30px 20px;
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    -webkit-transition: all 00.5S;
+    transition: all 00.5S
+}
+
+#footer_area ul li:nth-child(1) a:hover {
+    color: #04599a
+}
+
+#footer_area ul li:nth-child(2) a:hover {
+    color: #30bae7
+}
+
+#footer_area ul li:nth-child(3) a:hover {
+    color: #fb4d0e
+}
+
+#footer_area ul li:nth-child(4) a:hover {
+    color: #0089d4
+}
+
+#footer_area ul li:nth-child(5) a:hover {
+    color: #053eff
+}
+
+#footer_area ul li:nth-child(6) a:hover {
+    color: #ea4c89
+}
+
+#footer_area ul li:nth-child(7) a:hover {
+    color: #000;
+    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff
+}
